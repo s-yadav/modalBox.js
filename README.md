@@ -7,6 +7,7 @@ Fact is we only use 30 to 40 % of that plugin and for that 30 to 40 % we comprom
 
 So why not use a plugin which is much smaller and have options which we need the most. modelBox.js is a very light weight plugin packed with only most used features Its overall size is around 5.3 kb ( 2.5 kb minified).
 
+Demo : <a href="http://s-yadav.github.com/modelBox.html#demo">http://s-yadav.github.com/modelBox.html#demo</a>
 Examples
 ========
 
@@ -230,3 +231,23 @@ Methods
   </tr>
 </table>
 
+Styling
+=======
+We have three classes related to model box.<br />
+<ol>
+<li><span class="highlight">iw-modalBox</span> for model box.</li>
+<li><span class="highlight">iw-modalOverlay</span> for overlay.</li>
+<li><span class="highlight">iw-closeImg</span> for close icon.</li>
+</ol>
+Example
+<pre><code>
+.iw-modalBox{
+	padding:5px;
+	border:1px solid #CCC;
+}
+
+.iw-modalOverlay{
+	background: #000;
+	opacity:.6;
+}
+</pre></code>
