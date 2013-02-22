@@ -1,13 +1,13 @@
-modelBox.js
+modalBox.js
 ===========
 
 Modal window has become a very popular way of showing information in detail, and getting needed input while blocking the main application flow. There are large numbers of attractive plugin available over the internet with lot of options. But the question is do we need that all?
 
 Fact is we only use 30 to 40 % of that plugin and for that 30 to 40 % we compromise to use a large size plugin. In internet world size matters a lot. Least the size of your page greater the loading speed.
 
-So why not use a plugin which is much smaller and have options which we need the most. modelBox.js is a very light weight plugin packed with only most used features Its overall size is around 5.3 kb ( 2.5 kb minified).
+So why not use a plugin which is much smaller and have options which we need the most. modalBox.js is a very light weight plugin packed with only most used features Its overall size is around 5.3 kb ( 2.5 kb minified).
 
-Demo : <a href="http://s-yadav.github.com/modelBox.html#demo">http://s-yadav.github.com/modelBox.html#demo</a>
+Demo : <a href="http://s-yadav.github.com/modalBox.html#demo">http://s-yadav.github.com/modalBox.html#demo</a>
 Examples
 ========
 
@@ -79,7 +79,7 @@ $('.modalBox').modalBox({
 </code>
 </pre>
 <br />
-<strong>Mutiple model box functions</strong><br />
+<strong>Mutiple modal box functions</strong><br />
 <pre>
 <code>
 $('.modalBox').modalBox({
@@ -233,9 +233,9 @@ Methods
 
 Styling
 =======
-We have three classes related to model box.<br />
+We have three classes related to modal box.<br />
 <ol>
-<li><span class="highlight">iw-modalBox</span> for model box.</li>
+<li><span class="highlight">iw-modalBox</span> for modal box.</li>
 <li><span class="highlight">iw-modalOverlay</span> for overlay.</li>
 <li><span class="highlight">iw-closeImg</span> for close icon.</li>
 </ol>
@@ -250,4 +250,5 @@ Example
 	background: #000;
 	opacity:.6;
 }
-</pre></code>
+</code>
+</pre>
