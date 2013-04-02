@@ -142,7 +142,7 @@ s-yadav.github.com
                 addOverlay();
             }
 
-            //to bind close event	
+            //to bind close event   
             if (option.iconClose) {
                 if ((elm.outerWidth() < (windowWidth - 50)) && (elm.outerHeight() < (windowHeight - 50))) {
                     var randId = Math.ceil(Math.random() * 1000) + 'close';
@@ -152,22 +152,22 @@ s-yadav.github.com
                         modalBox: elm
                     }, clickEvent);
                     //we will add resize event to retain the correct position of close button.
-                    $(window).bind('resize', {
+                    $(window).bind('resize.iw-modalBox', {
                         img: img,
                         elm: elm
                     }, resizeEvent);
-                    $(window).triggerHandler('resize');
+                    $(window).triggerHandler('resize.iw-modalBox');
                     $('body').append(img);
                 }
             }
 
             if (option.keyClose) {
-                $('html').bind('keyup', keyEvent);
+                $('html').bind('keyup.iw-modalBox', keyEvent);
             }
 
             if (option.bodyClose) {
-                /*create a overlay(or use existing) in which we will give close event to overlay 
-						and not in the body to come out of bubbling issue */
+                /*create a overlay(or use existing) in which we will give close event to overlay
+                        and not in the body to come out of bubbling issue */
                 var overlay = $('.iw-modalOverlay');
                 if (overlay.length == 0) {
                     addOverlay();
@@ -209,8 +209,8 @@ s-yadav.github.com
                 //if all modal box is closed unbinde all events.
                 if ($('.iw-modalBox').length == 0) {
                     $('.iw-modalOverlay').remove();
-                    $('html').unbind('keyup', keyEvent);
-                    $(window).unbind('resize', resizeEvent);
+                    $('html').unbind('keyup.iw-modalBox');
+                    $(window).unbind('resize.iw-modalBox');
                 }
             }
 
