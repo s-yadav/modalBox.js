@@ -162,7 +162,7 @@ s-yadav.github.com
             }
 
             if (option.keyClose) {
-                $('html').bind('keyup.iw-modalBox', keyEvent);
+                $(document).bind('keyup.iw-modalBox', keyEvent);
             }
 
             if (option.bodyClose) {
@@ -209,7 +209,7 @@ s-yadav.github.com
                 //if all modal box is closed unbinde all events.
                 if ($('.iw-modalBox').length == 0) {
                     $('.iw-modalOverlay').remove();
-                    $('html').unbind('keyup.iw-modalBox');
+                    $(document).unbind('keyup.iw-modalBox');
                     $(window).unbind('resize.iw-modalBox');
                 }
             }
