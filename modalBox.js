@@ -99,20 +99,31 @@ s-yadav.github.com
                 elmHeightO = elm.outerHeight(),
                 windowWidth = $(window).width(),
                 windowHeight = $(window).height(),
-                width = option.width != 'auto' ? option.width : Math.min(elmWidthO, windowWidth) - (elmWidthO - elmWidth),
-                height = option.height != 'auto' ? option.height : Math.min(elmHeightO, windowHeight) - (elmHeightO - elmHeight);
+                width = Math.min(elmWidthO, windowWidth) - (elmWidthO - elmWidth),
+                height = Math.min(elmHeightO, windowHeight) - (elmHeightO - elmHeight);
 
             //to add modalBox class
             elm.data('iw-size', {
                 'width': elmWidth,
                 'height': elmHeight
             })
-                .addClass('iw-modalBox')
-                .css({
-                width: width,
-                height: height,
-                position: 'fixed',
-            });
+                .addClass('iw-modalBox');
+			
+			//to maintian box-sizing property if a user define width and height use css method else use width/ height method.	
+            if(option.width != 'auto'){
+					elm.css('width',option.width);
+				}
+			else{
+					elm.width(width);	
+				}
+			
+            if(option.height != 'auto'){
+					elm.css('height',option.height);
+				}
+			else{
+					elm.height(height);	
+				}
+
 
 
             var top = '50%',
@@ -132,9 +143,10 @@ s-yadav.github.com
             elm.css({
                 top: top,
                 left: left,
+                position: 'fixed',
+                display: 'block',
                 'margin-left': -marginLeft,
                 'margin-top': -marginTop,
-                'display': 'block',
                 'z-index': '99999'
             });
 
@@ -194,9 +206,13 @@ s-yadav.github.com
                 }
                 elm.css({
                     'display': 'none',
-                    'width': elm.data('iw-size').width,
-                    'height': elm.data('iw-size').height
-                })
+                });
+				
+				//to maintain box-sizing using width and height method instead css to set width or height
+				var orgSize=elm.data('iw-size')
+				elm.width(orgSize.width);
+				elm.height(orgSize.height)
+				
                 //call callback function
                 elm.data('closeFun').call(this);
 
