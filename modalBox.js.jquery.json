@@ -1,6 +1,6 @@
 {
     "name": "modalBox.js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "A very light weight(2.5kb minified) modal window plugin which suits your basic needs.",
     "author": {
         "name": "Sudhanshu Yadav",

@@ -1,5 +1,5 @@
 /*
-ModalBox.js v 1.0.0
+ModalBox.js v 1.0.1
 Author: sudhanshu yadav
 Copyright (c) 2013 Sudhanshu Yadav, released under the MIT license.
 s-yadav.github.com
@@ -32,18 +32,18 @@ s-yadav.github.com
 
         //callback function
         onOpen: function () {},
-        onClose: function () {},
-    }
+        onClose: function () {}
+    };
 
     //global methods
 
     //to close all modal box
     $.modalBox.close = function () {
         $('.iw-modalBox').each(function () {
-            methods['close'].call($(this));
+            methods.close.call($(this));
         });
 
-    }
+    };
 
 
     //internal method
@@ -57,7 +57,7 @@ s-yadav.github.com
     var clickEvent = function (e) {
         //check if modalbox is defined in data
         if (e.data) {
-            methods['close'].call(e.data.modalBox);
+            methods.close.call(e.data.modalBox);
         } else {
             $.modalBox.close();
         }
@@ -71,7 +71,7 @@ s-yadav.github.com
             position: 'fixed',
             'z-index': '99999'
         });
-    }
+    };
     //to show overlay
     var addOverlay = function () {
         $('body').append('<div class="iw-modalOverlay"></div>');
@@ -82,11 +82,10 @@ s-yadav.github.com
             position: 'fixed',
             top: 0,
             left: 0,
-            display: 'block',
             'z-index': '1000'
 
         });
-    }
+    };
 
     var methods = {
         open: function (option) {
@@ -137,7 +136,7 @@ s-yadav.github.com
             }
             if (option.top != 'auto') {
                 top = option.top;
-                marginTop = '0'
+                marginTop = '0';
             }
 
             elm.css({
@@ -181,7 +180,7 @@ s-yadav.github.com
                 /*create a overlay(or use existing) in which we will give close event to overlay
                         and not in the body to come out of bubbling issue */
                 var overlay = $('.iw-modalOverlay');
-                if (overlay.length == 0) {
+                if (overlay.length === 0) {
                     addOverlay();
                     overlay = $('.iw-modalOverlay');
                     overlay.css({
@@ -192,7 +191,7 @@ s-yadav.github.com
             }
             //call callback function
             option.onOpen.call(this);
-            elm.data('closeFun', option.onClose)
+            elm.data('closeFun', option.onClose);
 
         },
         close: function () {
@@ -205,13 +204,13 @@ s-yadav.github.com
                     $('#' + imgId).remove();
                 }
                 elm.css({
-                    'display': 'none',
+                    'display': 'none'
                 });
 				
 				//to maintain box-sizing using width and height method instead css to set width or height
-				var orgSize=elm.data('iw-size')
+				var orgSize=elm.data('iw-size');
 				elm.width(orgSize.width);
-				elm.height(orgSize.height)
+				elm.height(orgSize.height);
 				
                 //call callback function
                 elm.data('closeFun').call(this);
@@ -223,7 +222,7 @@ s-yadav.github.com
                 .removeClass('iw-modalBox');
 
                 //if all modal box is closed unbinde all events.
-                if ($('.iw-modalBox').length == 0) {
+                if ($('.iw-modalBox').length === 0) {
                     $('.iw-modalOverlay').remove();
                     $(document).unbind('keyup.iw-modalBox');
                     $(window).unbind('resize.iw-modalBox');
@@ -231,5 +230,5 @@ s-yadav.github.com
             }
 
         }
-    }
+    };
 })(jQuery, window, document);
