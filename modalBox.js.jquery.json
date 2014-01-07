@@ -15,7 +15,7 @@
     "dependencies": {
         "jquery": ">=1.6"
     },
-	"keywords":["modal-window","modalbox","modal","jquery","lightbox","dialog"],
+	"keywords":["modal-window","modalbox","modal","jquery","lightbox","dialog","popup"],
     "demo": "http://s-yadav.github.io/modalBox.html#demo",
     "docs": "http://s-yadav.github.io/modalBox.html#documentation",
     "homepage": "http://s-yadav.github.io/modalBox.html",
