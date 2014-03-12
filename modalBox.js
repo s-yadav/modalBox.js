@@ -1,5 +1,5 @@
 /*
-ModalBox.js v 1.0.1
+ModalBox.js v 1.0.2
 Author: sudhanshu yadav
 Copyright (c) 2013 Sudhanshu Yadav, released under the MIT license.
 s-yadav.github.com

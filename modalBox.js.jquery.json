@@ -1,6 +1,6 @@
 {
     "name": "modalBox.js",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "title": "A very light weight(2.5kb minified) modal window plugin which suits your basic needs.",
     "author": {
         "name": "Sudhanshu Yadav",
@@ -16,9 +16,9 @@
         "jquery": ">=1.6"
     },
 	"keywords":["modal-window","modalbox","modal","jquery","lightbox","dialog","popup"],
-    "demo": "http://s-yadav.github.io/modalBox.html#demo",
-    "docs": "http://s-yadav.github.io/modalBox.html#documentation",
-    "homepage": "http://s-yadav.github.io/modalBox.html",
+    "demo": "http://ignitersworld.com/lab/modalBox.html#demo",
+    "docs": "http://ignitersworld.com/lab/modalBox.html#documentation",
+    "homepage": "http://ignitersworld.com/lab/modalBox.html",
     "download": "https://github.com/s-yadav/modalBox.js",
     "description": "modalBox.js is a very light weight modal window plugin packed with only most used features and options. Its overall size is around 5.3 kb ( 2.5 kb minified). Core of plugin is completly explained in homepage, so you can easily extend it according to your need."
 }
