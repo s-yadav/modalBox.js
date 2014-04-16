@@ -11,9 +11,9 @@
         "type": "git",
         "url": "https://github.com/s-yadav/modalBox.js"
     },
-	"ignore": [
-		"modalBox.js.jquery.json",
-	  ],
+    "ignore": [
+        "modalBox.js.jquery.json"
+    ],
     "licenses": [
         {
             "type": "MIT",
@@ -26,7 +26,15 @@
     "dependencies": {
         "jquery": ">=1.6"
     },
-    "keywords": ["modal-window","modalbox","modal","jquery","lightbox","dialog","popup"],
+    "keywords": [
+        "modal-window",
+        "modalbox",
+        "modal",
+        "jquery",
+        "lightbox",
+        "dialog",
+        "popup"
+    ],
     "readmeFilename": "README.md",
     "demo": "http://ignitersworld.com/lab/modalBox.html#demo",
     "docs": "http://ignitersworld.com/lab/modalBox.html#documentation",
