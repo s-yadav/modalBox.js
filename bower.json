@@ -1,7 +1,7 @@
 {
     "name": "modalBox.js",
     "description": "modalBox is light wieght plugin to display modal window.",
-    "main": "./modalBox",
+    "main": "modalBox.js",
     "author": {
         "name": "Sudhanshu Yadav",
         "email": "sudhanshuyadav2@gmail.com"
