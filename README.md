@@ -7,7 +7,7 @@ Fact is we only use 30 to 40 % of that plugin and for that 30 to 40 % we comprom
 
 So why not use a plugin which is much smaller and have options which we need the most. modalBox.js is a very light weight plugin packed with only most used features Its overall size is around 5.3 kb ( 2.5 kb minified).
 
-Demo : <a href="http://ignitersworld.com/lab/modalBox.html#demo">http://ignitersworld.com/lab/modalBox.html#demo</a>
+
 Examples
 ========
 
